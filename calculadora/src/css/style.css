@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "bold";
+  src: url(./../assets/font/Cruinn\ Bold.ttf);
+}
+@font-face {
+  font-family: "regular";
+  src: url(./../assets/font/Cruinn\ Regular.ttf);
+}
+:root {
+  --primary-color: rgb(143, 59, 118);
+  --primary-color-dark: rgb(85, 55, 114);
+}
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+}
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.container h1 {
+  font-family: "bold";
+  font-size: 2rem;
+}
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: "bold";
+}
+form input {
+  font-size: 1.5rem;
+  height: 50px;
+  padding: 0 20px;
+  font-family: "regular";
+}
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-family: "bold";
+  font-size: 1.75rem;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+form button:hover {
+  background: var(--primary-color-dark);
+}
+.paragrafo-resultado {
+  background: rgb(109, 255, 182);
+  padding: 10px 20px;
+  font-family: "regular";
+  font-size: 1.2rem;
+}
+.bad {
+  color: red;
+}
